@@ -38,7 +38,8 @@ class UserInput extends Component {
           <textarea
             id="editor"
             type="text"
-            className="md-input"
+            className="form-control md-input"
+            rows={10}
             value={this.state.md}
             onChange={this.updatePreview.bind(this)}
           />
