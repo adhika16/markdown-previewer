@@ -1,0 +1,17 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* 100% of the viewport height */
+}
+
+.login-card {
+    width: 300px;
+    /* Adjust the width as needed */
+}
+
+.warn-message {
+    color: red;
+}
