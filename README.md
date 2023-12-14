@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Markdown Previewer
+
+A simple Markdown previewer built with React that allows you to write and preview Markdown in real-time. This project is a handy tool for anyone working with Markdown, whether you're writing documentation, blog posts, or README files. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Demo](#demo)
+- [Features](#features)
+- [Firebase Setup](#firebase-setup)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the live demo: [Markdown Previewer Demo](https://markdown-previewer-3aa0d.web.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Real-time preview of Markdown as you type.
+- Login and signup features.
+- Supports common Markdown syntax elements.
+- Responsive design for various screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Firebase setup
 
-### `npm run build`
+This setup assumes that you already have a Firebase account. If you have not registered yet, you may register here [https://firebase.google.com/](https://firebase.google.com/). There is an option for a [no-cost account](https://firebase.google.com/pricing). 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Create Firebase app. For example, we can follow this guide [https://firebase.google.com/learn/pathways/firebase-web](https://firebase.google.com/docs/web/setup?continue=https%3A%2F%2Ffirebase.google.com%2Flearn%2Fpathways%2Ffirebase-web%23article-https%3A%2F%2Ffirebase.google.com%2Fdocs%2Fweb%2Fsetup#create-firebase-project-and-app)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Setup Firebase authentication for email and password. We can follow this guide [https://firebase.google.com/docs/auth/web/password-auth#before_you_begin](https://firebase.google.com/docs/auth/web/password-auth#before_you_begin)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+git clone https://github.com/adhika16/markdown-previewer.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate to the project directory:
+```
+cd markdown-previewer
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install dependencies:
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Update [Firebase configurations](/src/configs/firebaseConfig.js) with the configuration from your Firebase app. We can follow this guide to get Firebase config [https://support.google.com/firebase/answer/7015592?hl=en#web&zippy=%2Cin-this-article](https://support.google.com/firebase/answer/7015592?hl=en#web&zippy=%2Cin-this-article). 
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Start the development server:
+```
+npm start
+```
+2. Open your browser and visit [http://localhost:3000](http://localhost:3000).
+3. Login or register to access Markdown Previewer app. 
+4. Begin typing Markdown in the editor, and the preview will update in real-time.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-### Code Splitting
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`.
+3. Make your changes and commit them: `git commit -m 'Description of your changes'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the [MIT License](/LICENSE).
